@@ -1,0 +1,11 @@
+*.exe
+*.pdb
+*.obj
+*.cache
+*.pch
+*.idb
+*.htm
+*.tlog
+*.res
+*.aps
+*.tmp

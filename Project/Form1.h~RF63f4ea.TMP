@@ -1,0 +1,450 @@
+#pragma once
+
+
+namespace Project {
+
+	using namespace System;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+
+	/// <summary>
+	/// Summary for Form1
+	///
+	/// WARNING: If you change the name of this class, you will need to change the
+	///          'Resource File Name' property for the managed resource compiler tool
+	///          associated with all .resx files this class depends on.  Otherwise,
+	///          the designers will not be able to interact properly with localized
+	///          resources associated with this form.
+	/// </summary>
+	public ref class Form1 : public System::Windows::Forms::Form
+	{
+	public:
+		Form1(void)
+		{
+			InitializeComponent();
+			//
+			//TODO: Add the constructor code here
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		~Form1()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+	private: System::Windows::Forms::StatusStrip^  statusStrip1;
+	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel1;
+
+
+	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel2;
+	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel3;
+	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel4;
+	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^  fileToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  newToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  openToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator1;
+	private: System::Windows::Forms::ToolStripMenuItem^  saveToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  saveAsToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator2;
+	private: System::Windows::Forms::ToolStripMenuItem^  printToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator3;
+	private: System::Windows::Forms::ToolStripMenuItem^  exitToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  insertToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  sourceToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  parallelSourceToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  splaySToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  soloSourceToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  lenzToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  biConvexLensToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  planoConvextToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  planoConvexLensToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  planoConcaveLensToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  mirrorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  soleMirrorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  concaveMirrorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  convexMirrorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  blackObjectToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator4;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolsToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  startToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  stopToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator5;
+	private: System::Windows::Forms::ToolStripMenuItem^  optionToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  helpToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  aboutToolStripMenuItem;
+	private: System::Windows::Forms::Panel^  panel1;
+	private: System::Windows::Forms::Panel^  panel2;
+
+	protected: 
+
+	private:
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		System::ComponentModel::Container ^components;
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			this->statusStrip1 = (gcnew System::Windows::Forms::StatusStrip());
+			this->toolStripStatusLabel1 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->toolStripStatusLabel2 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->toolStripStatusLabel3 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->toolStripStatusLabel4 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->newToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->openToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->saveToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->saveAsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->printToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator3 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->insertToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sourceToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->parallelSourceToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->splaySToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->soloSourceToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator4 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->lenzToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->biConvexLensToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->planoConvextToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->planoConvexLensToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->planoConcaveLensToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mirrorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->soleMirrorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->concaveMirrorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->convexMirrorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->blackObjectToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->startToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->stopToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator5 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->optionToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->statusStrip1->SuspendLayout();
+			this->menuStrip1->SuspendLayout();
+			this->SuspendLayout();
+			// 
+			// statusStrip1
+			// 
+			this->statusStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {this->toolStripStatusLabel1, 
+				this->toolStripStatusLabel2, this->toolStripStatusLabel3, this->toolStripStatusLabel4});
+			this->statusStrip1->Location = System::Drawing::Point(0, 400);
+			this->statusStrip1->Name = L"statusStrip1";
+			this->statusStrip1->Size = System::Drawing::Size(698, 22);
+			this->statusStrip1->TabIndex = 0;
+			this->statusStrip1->Text = L"statusStrip1";
+			// 
+			// toolStripStatusLabel1
+			// 
+			this->toolStripStatusLabel1->Name = L"toolStripStatusLabel1";
+			this->toolStripStatusLabel1->Size = System::Drawing::Size(118, 17);
+			this->toolStripStatusLabel1->Text = L"toolStripStatusLabel1";
+			// 
+			// toolStripStatusLabel2
+			// 
+			this->toolStripStatusLabel2->Name = L"toolStripStatusLabel2";
+			this->toolStripStatusLabel2->Size = System::Drawing::Size(91, 17);
+			this->toolStripStatusLabel2->Text = L"                           |";
+			// 
+			// toolStripStatusLabel3
+			// 
+			this->toolStripStatusLabel3->Name = L"toolStripStatusLabel3";
+			this->toolStripStatusLabel3->Size = System::Drawing::Size(97, 17);
+			this->toolStripStatusLabel3->Text = L"                              ";
+			// 
+			// toolStripStatusLabel4
+			// 
+			this->toolStripStatusLabel4->Name = L"toolStripStatusLabel4";
+			this->toolStripStatusLabel4->Size = System::Drawing::Size(118, 17);
+			this->toolStripStatusLabel4->Text = L"toolStripStatusLabel4";
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {this->fileToolStripMenuItem, 
+				this->insertToolStripMenuItem, this->toolsToolStripMenuItem, this->helpToolStripMenuItem});
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(698, 24);
+			this->menuStrip1->TabIndex = 1;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// fileToolStripMenuItem
+			// 
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(9) {this->newToolStripMenuItem, 
+				this->openToolStripMenuItem, this->toolStripSeparator1, this->saveToolStripMenuItem, this->saveAsToolStripMenuItem, this->toolStripSeparator2, 
+				this->printToolStripMenuItem, this->toolStripSeparator3, this->exitToolStripMenuItem});
+			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
+			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
+			this->fileToolStripMenuItem->Text = L"File";
+			// 
+			// newToolStripMenuItem
+			// 
+			this->newToolStripMenuItem->Name = L"newToolStripMenuItem";
+			this->newToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::N));
+			this->newToolStripMenuItem->Size = System::Drawing::Size(141, 22);
+			this->newToolStripMenuItem->Text = L"New";
+			// 
+			// openToolStripMenuItem
+			// 
+			this->openToolStripMenuItem->Name = L"openToolStripMenuItem";
+			this->openToolStripMenuItem->Size = System::Drawing::Size(141, 22);
+			this->openToolStripMenuItem->Text = L"Open";
+			// 
+			// toolStripSeparator1
+			// 
+			this->toolStripSeparator1->Name = L"toolStripSeparator1";
+			this->toolStripSeparator1->Size = System::Drawing::Size(138, 6);
+			// 
+			// saveToolStripMenuItem
+			// 
+			this->saveToolStripMenuItem->Name = L"saveToolStripMenuItem";
+			this->saveToolStripMenuItem->Size = System::Drawing::Size(141, 22);
+			this->saveToolStripMenuItem->Text = L"Save";
+			// 
+			// saveAsToolStripMenuItem
+			// 
+			this->saveAsToolStripMenuItem->Name = L"saveAsToolStripMenuItem";
+			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(141, 22);
+			this->saveAsToolStripMenuItem->Text = L"Save As ...";
+			// 
+			// toolStripSeparator2
+			// 
+			this->toolStripSeparator2->Name = L"toolStripSeparator2";
+			this->toolStripSeparator2->Size = System::Drawing::Size(138, 6);
+			// 
+			// printToolStripMenuItem
+			// 
+			this->printToolStripMenuItem->Name = L"printToolStripMenuItem";
+			this->printToolStripMenuItem->Size = System::Drawing::Size(141, 22);
+			this->printToolStripMenuItem->Text = L"Print";
+			// 
+			// toolStripSeparator3
+			// 
+			this->toolStripSeparator3->Name = L"toolStripSeparator3";
+			this->toolStripSeparator3->Size = System::Drawing::Size(138, 6);
+			// 
+			// exitToolStripMenuItem
+			// 
+			this->exitToolStripMenuItem->Name = L"exitToolStripMenuItem";
+			this->exitToolStripMenuItem->Size = System::Drawing::Size(141, 22);
+			this->exitToolStripMenuItem->Text = L"Exit";
+			// 
+			// insertToolStripMenuItem
+			// 
+			this->insertToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {this->sourceToolStripMenuItem, 
+				this->toolStripSeparator4, this->lenzToolStripMenuItem, this->mirrorToolStripMenuItem, this->blackObjectToolStripMenuItem});
+			this->insertToolStripMenuItem->Name = L"insertToolStripMenuItem";
+			this->insertToolStripMenuItem->Size = System::Drawing::Size(48, 20);
+			this->insertToolStripMenuItem->Text = L"Insert";
+			// 
+			// sourceToolStripMenuItem
+			// 
+			this->sourceToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {this->parallelSourceToolStripMenuItem, 
+				this->splaySToolStripMenuItem, this->soloSourceToolStripMenuItem});
+			this->sourceToolStripMenuItem->Name = L"sourceToolStripMenuItem";
+			this->sourceToolStripMenuItem->Size = System::Drawing::Size(140, 22);
+			this->sourceToolStripMenuItem->Text = L"Source";
+			// 
+			// parallelSourceToolStripMenuItem
+			// 
+			this->parallelSourceToolStripMenuItem->Name = L"parallelSourceToolStripMenuItem";
+			this->parallelSourceToolStripMenuItem->Size = System::Drawing::Size(151, 22);
+			this->parallelSourceToolStripMenuItem->Text = L"Parallel Source";
+			// 
+			// splaySToolStripMenuItem
+			// 
+			this->splaySToolStripMenuItem->Name = L"splaySToolStripMenuItem";
+			this->splaySToolStripMenuItem->Size = System::Drawing::Size(151, 22);
+			this->splaySToolStripMenuItem->Text = L"Splay Source";
+			// 
+			// soloSourceToolStripMenuItem
+			// 
+			this->soloSourceToolStripMenuItem->Name = L"soloSourceToolStripMenuItem";
+			this->soloSourceToolStripMenuItem->Size = System::Drawing::Size(151, 22);
+			this->soloSourceToolStripMenuItem->Text = L"Solo Source";
+			// 
+			// toolStripSeparator4
+			// 
+			this->toolStripSeparator4->Name = L"toolStripSeparator4";
+			this->toolStripSeparator4->Size = System::Drawing::Size(137, 6);
+			// 
+			// lenzToolStripMenuItem
+			// 
+			this->lenzToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {this->biConvexLensToolStripMenuItem, 
+				this->planoConvextToolStripMenuItem, this->planoConvexLensToolStripMenuItem, this->planoConcaveLensToolStripMenuItem});
+			this->lenzToolStripMenuItem->Name = L"lenzToolStripMenuItem";
+			this->lenzToolStripMenuItem->Size = System::Drawing::Size(140, 22);
+			this->lenzToolStripMenuItem->Text = L"Lens";
+			// 
+			// biConvexLensToolStripMenuItem
+			// 
+			this->biConvexLensToolStripMenuItem->Name = L"biConvexLensToolStripMenuItem";
+			this->biConvexLensToolStripMenuItem->Size = System::Drawing::Size(177, 22);
+			this->biConvexLensToolStripMenuItem->Text = L"BiConvex Lens";
+			// 
+			// planoConvextToolStripMenuItem
+			// 
+			this->planoConvextToolStripMenuItem->Name = L"planoConvextToolStripMenuItem";
+			this->planoConvextToolStripMenuItem->Size = System::Drawing::Size(177, 22);
+			this->planoConvextToolStripMenuItem->Text = L"BiConcave Lens";
+			// 
+			// planoConvexLensToolStripMenuItem
+			// 
+			this->planoConvexLensToolStripMenuItem->Name = L"planoConvexLensToolStripMenuItem";
+			this->planoConvexLensToolStripMenuItem->Size = System::Drawing::Size(177, 22);
+			this->planoConvexLensToolStripMenuItem->Text = L"PlanoConvex Lens";
+			// 
+			// planoConcaveLensToolStripMenuItem
+			// 
+			this->planoConcaveLensToolStripMenuItem->Name = L"planoConcaveLensToolStripMenuItem";
+			this->planoConcaveLensToolStripMenuItem->Size = System::Drawing::Size(177, 22);
+			this->planoConcaveLensToolStripMenuItem->Text = L"PlanoConcave Lens";
+			// 
+			// mirrorToolStripMenuItem
+			// 
+			this->mirrorToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {this->soleMirrorToolStripMenuItem, 
+				this->concaveMirrorToolStripMenuItem, this->convexMirrorToolStripMenuItem});
+			this->mirrorToolStripMenuItem->Name = L"mirrorToolStripMenuItem";
+			this->mirrorToolStripMenuItem->Size = System::Drawing::Size(140, 22);
+			this->mirrorToolStripMenuItem->Text = L"Mirror";
+			// 
+			// soleMirrorToolStripMenuItem
+			// 
+			this->soleMirrorToolStripMenuItem->Name = L"soleMirrorToolStripMenuItem";
+			this->soleMirrorToolStripMenuItem->Size = System::Drawing::Size(156, 22);
+			this->soleMirrorToolStripMenuItem->Text = L"Sole Mirror";
+			// 
+			// concaveMirrorToolStripMenuItem
+			// 
+			this->concaveMirrorToolStripMenuItem->Name = L"concaveMirrorToolStripMenuItem";
+			this->concaveMirrorToolStripMenuItem->Size = System::Drawing::Size(156, 22);
+			this->concaveMirrorToolStripMenuItem->Text = L"Convex Mirror";
+			// 
+			// convexMirrorToolStripMenuItem
+			// 
+			this->convexMirrorToolStripMenuItem->Name = L"convexMirrorToolStripMenuItem";
+			this->convexMirrorToolStripMenuItem->Size = System::Drawing::Size(156, 22);
+			this->convexMirrorToolStripMenuItem->Text = L"Concave Mirror";
+			// 
+			// blackObjectToolStripMenuItem
+			// 
+			this->blackObjectToolStripMenuItem->Name = L"blackObjectToolStripMenuItem";
+			this->blackObjectToolStripMenuItem->Size = System::Drawing::Size(140, 22);
+			this->blackObjectToolStripMenuItem->Text = L"Black Object";
+			// 
+			// toolsToolStripMenuItem
+			// 
+			this->toolsToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {this->startToolStripMenuItem, 
+				this->stopToolStripMenuItem, this->toolStripSeparator5, this->optionToolStripMenuItem});
+			this->toolsToolStripMenuItem->Name = L"toolsToolStripMenuItem";
+			this->toolsToolStripMenuItem->Size = System::Drawing::Size(44, 20);
+			this->toolsToolStripMenuItem->Text = L"View";
+			// 
+			// startToolStripMenuItem
+			// 
+			this->startToolStripMenuItem->Name = L"startToolStripMenuItem";
+			this->startToolStripMenuItem->Size = System::Drawing::Size(111, 22);
+			this->startToolStripMenuItem->Text = L"Start";
+			// 
+			// stopToolStripMenuItem
+			// 
+			this->stopToolStripMenuItem->Name = L"stopToolStripMenuItem";
+			this->stopToolStripMenuItem->Size = System::Drawing::Size(111, 22);
+			this->stopToolStripMenuItem->Text = L"Stop";
+			// 
+			// toolStripSeparator5
+			// 
+			this->toolStripSeparator5->Name = L"toolStripSeparator5";
+			this->toolStripSeparator5->Size = System::Drawing::Size(108, 6);
+			// 
+			// optionToolStripMenuItem
+			// 
+			this->optionToolStripMenuItem->Name = L"optionToolStripMenuItem";
+			this->optionToolStripMenuItem->Size = System::Drawing::Size(111, 22);
+			this->optionToolStripMenuItem->Text = L"Option";
+			// 
+			// helpToolStripMenuItem
+			// 
+			this->helpToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->aboutToolStripMenuItem});
+			this->helpToolStripMenuItem->Name = L"helpToolStripMenuItem";
+			this->helpToolStripMenuItem->Size = System::Drawing::Size(44, 20);
+			this->helpToolStripMenuItem->Text = L"Help";
+			// 
+			// aboutToolStripMenuItem
+			// 
+			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
+			this->aboutToolStripMenuItem->Size = System::Drawing::Size(107, 22);
+			this->aboutToolStripMenuItem->Text = L"About";
+			// 
+			// panel1
+			// 
+			this->panel1->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panel1->Location = System::Drawing::Point(12, 36);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(120, 361);
+			this->panel1->TabIndex = 2;
+			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->panel2->Location = System::Drawing::Point(138, 35);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(548, 362);
+			this->panel2->TabIndex = 3;
+			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form1::panel2_Paint);
+			this->panel2->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &Form1::panel2_MouseMove);
+			// 
+			// Form1
+			// 
+			this->AllowDrop = true;
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::Control;
+			this->ClientSize = System::Drawing::Size(698, 422);
+			this->Controls->Add(this->panel2);
+			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->statusStrip1);
+			this->Controls->Add(this->menuStrip1);
+			this->ImeMode = System::Windows::Forms::ImeMode::On;
+			this->MainMenuStrip = this->menuStrip1;
+			this->Name = L"Form1";
+			this->Text = L"Optic Laboratory";
+			this->statusStrip1->ResumeLayout(false);
+			this->statusStrip1->PerformLayout();
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
+		}
+#pragma endregion
+	private: System::Void panel2_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) 
+			 {
+				statusStrip1->Items[0]->Text=e->X.ToString()+ " , " + e->Y.ToString();
+			 }
+private: System::Void panel2_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
+		 }
+};
+}
+
